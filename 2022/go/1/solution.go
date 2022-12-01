@@ -15,12 +15,12 @@ func main() {
 	}
 	inputdata := strings.Split(string(filebuffer), "\r\n\r\n")
 	fmt.Println(inputdata[0])
-	max_sum := int64(0)
+	max_sum := 0
 	for i := 0; i < len(inputdata); i++ {
 		elfs := strings.Split(inputdata[i], "\r\n")
-		sum := int64(0)
+		sum := 0
 		for j := 0; j < len(elfs); j++ {
-			tenBaseSixteenBitInt, _ := strconv.ParseInt(elfs[j], 10, 64)
+			tenBaseSixteenBitInt, _ := strconv.Atoi(elfs[j])
 			sum = sum + tenBaseSixteenBitInt
 		}
 		fmt.Println(i, sum, elfs)
