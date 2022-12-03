@@ -8,12 +8,11 @@ import (
 )
 
 func main() {
-	filebuffer, err := ioutil.ReadFile("input.txt")
+	filebuffer, err := ioutil.ReadFile("../input.txt")
 	if err != nil {
 		return
 	}
 	inputdata := strings.Split(string(filebuffer), "\r\n")
-	fmt.Println(inputdata[0])
 	total_sum := 0
 	for i := 0; i < len(inputdata); i++ {
 		plays := strings.Split(inputdata[i], " ")

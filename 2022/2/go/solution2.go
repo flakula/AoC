@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	filebuffer, err := ioutil.ReadFile("input.txt")
+	filebuffer, err := ioutil.ReadFile("../input.txt")
 	if err != nil {
 		return
 	}
