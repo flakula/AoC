@@ -36,11 +36,14 @@ func main() {
 			my_plays_points[2] += 1 // rock
 		}
 
-		if my_play == "X" { //win
+		//always win
+		// round_points = my_plays_points[2]
+
+		if my_play == "X" { //loose
 			round_points = my_plays_points[0]
 		} else if my_play == "Y" { // draw
 			round_points = my_plays_points[1]
-		} else if my_play == "Z" { //loose
+		} else if my_play == "Z" { //win
 			round_points = my_plays_points[2]
 		}
 
