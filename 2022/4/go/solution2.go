@@ -22,11 +22,11 @@ func main() {
 		first_assignment := strings.Split(assignments[0], "-")
 		second_assignment := strings.Split(assignments[1], "-")
 
-		x_1, _ := strconv.ParseFloat(first_assignment[0], 64)
-		y_1, _ := strconv.ParseFloat(first_assignment[1], 64)
+		x_1, _ := strconv.Atoi(first_assignment[0])
+		y_1, _ := strconv.Atoi(first_assignment[1])
 
-		x_2, _ := strconv.ParseFloat(second_assignment[0], 64)
-		y_2, _ := strconv.ParseFloat(second_assignment[1], 64)
+		x_2, _ := strconv.Atoi(second_assignment[0])
+		y_2, _ := strconv.Atoi(second_assignment[1])
 
 		if x_1 >= x_2 && x_1 <= y_2 || y_1 >= x_2 && y_1 <= y_2 {
 			// 1 is inside 2
