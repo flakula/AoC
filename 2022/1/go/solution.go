@@ -8,7 +8,6 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello, world")
 	filebuffer, err := ioutil.ReadFile("../input.txt")
 	if err != nil {
 		return
@@ -23,8 +22,7 @@ func main() {
 			tenBaseSixteenBitInt, _ := strconv.Atoi(elfs[j])
 			sum = sum + tenBaseSixteenBitInt
 		}
-		fmt.Println(i, sum, elfs)
-		// fmt.Println(i, sum)
+		// fmt.Println(i, sum, elfs)
 		if max_sum < sum {
 			max_sum = sum
 		}
